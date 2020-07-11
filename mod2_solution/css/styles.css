@@ -1,88 +1,122 @@
+/* Base Styles */
+
 * {
     box-sizing: border-box;
 }
 
-p {
-    padding: 15px;
-    margin: 0;
+h1 {
+    font-family: Brushstroke,fantasy;
+    color: #000000;
+    text-align: center;
 }
 
 body {
-    font-family:Goergia serif; 
-    background-color: azure;
-    font-size: 16px;
+    background-color: #FEF5CA;
+
 }
 
-.section {
-    background-color: lightgreen;
-    border: 2px solid #000000;
-    margin: 15px;
-    padding: 5px;
-    text-align: justify;
-    position: relative;
-}
-
-span {
-    font-size: 16px;
-    width: 150px;
-    border: 2px solid #000000;
-    font-weight: bold;
-    text-align: center;
-    float: right;
-    position: absolute;
-    top :0;
-    right: 0;
+p {
+    padding: 10px;
     margin: 0;
 }
 
-.header{
+.container {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+section {
+    border: 1px solid black;
+    background-color: #00FF99;
+    width: 100%;
+    height: 200px;
+    font-family: Helvetica;
+    color: black;
+    position: relative;
+    overflow: auto;
+}
+
+#chicken {
+    border: 1px solid black;
     text-align: center;
+    width: 30%;
+    margin-left: 70%;
+    font-family: Georgia,sans-serif;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+    background-color: #FFFF00;
 }
 
-.chicken, .beef, .sushi {
-    color: #000000
+#beef {
+    border: 1px solid black;
+    text-align: center;
+    width: 30%;
+    margin-left: 70%;
+    font-family: Georgia,sans-serif;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+    background-color: #FF1439;
 }
 
-.chicken {
-    background-color: blue;
-}
-
-.beef {
-    background-color: violet;
-}
-
-.sushi {
-    background-color: brown;
+#sushi {
+    border: 1px solid black;
+    text-align: center;
+    width: 30%;
+    margin-left: 70%;
+    font-family: Georgia,sans-serif;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #6495ED;
+    color: white;
+    padding: 5px;
 }
 
 .row {
     width: 100%;
 }
 
-/*Desktop view*/
+/* Desktop view */
+
 @media (min-width: 992px) {
-    .col-lg-1 {
-        width: 33.32%;
-        float: left;
-    }
+
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+  }
 }
 
-/*Tablet view*/
+/* Tablet view */
+
 @media (min-width: 768px) and (max-width: 991px) {
-    .col-md-1 {
-        width: 50%;
-        float: left;
-    }
-    .col-md-2 {
-        width: 100%;
-        float: left;
-    }
+  
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
 }
 
-/*Phone view*/
+/* Mobile view */
+
 @media (max-width: 767px) {
-    .col-sx-1 {
-        width: 100%;
-        float: left;
-    }
+  
+.col-sm-12 {
+    width: 100%;
+    float: left;
+  }
 }
